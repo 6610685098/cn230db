@@ -10,6 +10,7 @@ API_URL_DRIVER_STANDINGS = "http://ergast.com/api/f1/2024/1/driverStandings.json
 API_URL_CONSTRUCTOR_STANDINGS = "https://ergast.com/api/f1/2024/1/constructorStandings.json"
 API_URL_QUALIFYING = "http://ergast.com/api/f1/2024/1/qualifying.json"
 
+# fetch data จาก 3 API
 def fetch_data(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -31,6 +32,7 @@ def format_time(seconds):
     sec = seconds % 60
     return f"{minutes}:{sec:06.3f}"
 
+# สร้างตาราง นักแข่ง, โพลนักแข่ง, โพลทีม, ผล qualify
 def create_tables(cursor):
     cursor.execute("DROP TABLE IF EXISTS drivers;")
     cursor.execute("DROP TABLE IF EXISTS standings;")
@@ -77,6 +79,7 @@ def create_tables(cursor):
         );
     """)
 
+# ใส่ข้อมูลลงตาราง
 def insert_driver_standings_data(cursor, standings):
     for standing in standings:
         driver = standing['Driver']
@@ -145,7 +148,7 @@ def insert_qualifying_data(cursor, qualifying_results):
         """, (driverId, position, best_time, q1, q2, q3))
 
 
-
+# ฟังชั่นเกี่ยวกับสถิติ
 def show_top_5_drivers(cursor):
     print("\n🏆 Top 5 drivers by points:")
     for row in cursor.execute("""
