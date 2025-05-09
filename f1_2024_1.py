@@ -1,6 +1,7 @@
 import requests
 import sqlite3
 
+# กฤติเดช วิชัยดิษฐ 6610685098
 # อาจจะรันช้าหน่อยนะครับ
 # เป็นสถิติของการแข่งขัน Formula 1 BAHRAIN GRAND PRIX 2024 
 # โดยมี API ของ อันดับนักแข่ง อันดับทีม และเวลารอบ Qualify
