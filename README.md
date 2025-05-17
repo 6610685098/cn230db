@@ -13,9 +13,9 @@ Library: Requests, SQLite3
 Source: Ergast API [https://ergast.com/mrd/]
 
 API Endpoints:  
-1. Driver Standings [http://ergast.com/api/f1/2024/1/driverStandings.json]
-2. Constructor Standings [https://ergast.com/api/f1/2024/1/constructorStandings.json]
-3. Qualifying Results [http://ergast.com/api/f1/2024/1/qualifying.json]
+* Driver Standings [http://ergast.com/api/f1/2024/1/driverStandings.json]
+* Constructor Standings [https://ergast.com/api/f1/2024/1/constructorStandings.json]
+* Qualifying Results [http://ergast.com/api/f1/2024/1/qualifying.json]
 
 ### How It Works
 #### 1. Fetching Data from APIs
