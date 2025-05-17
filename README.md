@@ -1,4 +1,4 @@
-# CN230 Project: Data Pipeline and Analysis using SQLite and Ergast API
+# CN230 Project: Data analysis using SQLite and Ergast API
 
 This python script demonstrates the process of:
 
