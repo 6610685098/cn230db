@@ -1,8 +1,5 @@
 # CN230 Project: Data Pipeline and Analysis using SQLite and Ergast API
 
-    python db.py
-
-
 This python script demonstrates the process of:
 
 1. Fetching Formula 1 Bahrain GP data from Ergast API.
