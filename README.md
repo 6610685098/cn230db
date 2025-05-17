@@ -1,14 +1,11 @@
-# CN230 Project Template
+# CN230 Project: Data Pipeline and Analysis using SQLite and Ergast API
 
     python db.py
 
 
-1. fork this repository
-2. run codespaces
-3. when done execute the following git command
+This python script demonstrates the process of:
 
-```
-    git add .
-    git commit -m "finished"
-    git push origin main
+1. Fetching Formula 1 Bahrain GP data from Ergast API.
+2. Storing the fetched data into a SQLite database.
+3. Performing data analytics on the stored data using SQL queries (Top 5 drivers by points, Average points:, Top 5 constructions by points, First place, Last place, Fastest Qualifying lap and the table of Top 10 Qualifiers).
 ```
